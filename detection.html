@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Cancer Detection</title>
+    <link rel="stylesheet" href="detection.css">
+    <!-- Corrected CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-dna"></i>
+            <h1>Blood Cancer Detection</h1>
+        </div>
+        <p class="tagline">Early detection saves lives</p>
+        
+        <!-- Logout Button -->
+        <button id="logoutBtn" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Upload Your Blood Sample Image</h2>
+            <p>Our system analyzes blood cell patterns to detect potential issues</p>
+        </section>
+
+        <section class="upload-section">
+            <div id="dropArea" class="drop-area">
+                <div class="drop-area__message">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & drop an image here</p>
+                    <p class="small-text">or</p>
+                    <button id="browseBtn" class="browse-btn">Browse Files</button>
+                </div>
+                <img id="preview" class="drop-area__preview" src="" style="display: none;">
+                <input id="fileInput" type="file" accept="image/*" style="display: none;">
+            </div>
+            <button id="analyzeBtn" class="analyze-btn">Analyze Image</button>
+        </section>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <footer>
+        <p>This is a demonstration project. Always consult medical professionals for diagnosis.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
